@@ -1,0 +1,69 @@
+/* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.range {
+  color: #d5c7e2 !important;
+}
+.card {
+  background-color: #e1ebf4;
+  border: 7px solid white;
+}
+body {
+  background-color: #e1ebf4;
+}
+.container {
+  margin-left: 20rem;
+}
+.header {
+  line-height: 0.8;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+}
+h3 {
+  font-weight: bolder;
+  color: blueviolet;
+}
+input[type='range'] {
+  height: 49px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  color: blueviolet;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000;
+  background: blueviolet;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+input[type='range']::-webkit-slider-thumb {
+  background: white;
+  border: 5px solid blueviolet;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+@media screen and (max-width: 792px) {
+  .container {
+    width: 100%;
+    margin-left: 10rem;
+  }
+}
+@media screen and (max-width: 892px) {
+  .container {
+    width: 100%;
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 592px) {
+  .container {
+    margin-left: 2px;
+    height: max-content;
+    width: 100%;
+  }
+}
